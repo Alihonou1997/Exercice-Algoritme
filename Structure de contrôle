@@ -1,0 +1,308 @@
+LES EXERCICES D'ALGORITME
+STRUCTURE DE CONTROLE
+
+EXERCICE 1
+   Algoritme plus_grand_reel; 
+   Var
+   	A, B : réels;
+   Début
+   	Afficher "Entrez deux réels ";
+	Saisir A
+	Si A > B Alors
+	Afficher " Le plus grand est",A;
+	FinSi
+	Si A < B Alors
+		Afficher " Le plus grand est",B;
+	Finsi
+	Si A = B Alors
+		Afficher " Ils sont égaux";
+	FinSi
+   Fin.
+
+
+
+
+
+EXERCICE 2
+   Algorithme moins_10_ans;
+   Var
+	annee, age : entiers;
+   Début
+   	Afficher " Entrez votre année de naissance";
+	Saisir annee ;
+	age <-----2021-annee ;
+	Si age < 10 Alors
+		Afficher "vous avez", age, "ans, vous êtes bébé";
+	FinSi
+   Fin.
+EXERCICE 3
+   Algorithme plus_grand_reel;
+   Var
+	A, B : réels ;
+   Début
+	Afficher " Entrez deux réels ";
+	Saisir A;
+	Saisir B;
+	Si A > B Alors
+		Afficher " Le grand réel est ", A;
+	Sinon
+		Afficher " Le plus grand réel est ", B;
+	FinSi
+   Fin
+EXERCICE 4 
+    Algorithme valeur_absolue ;
+    Var
+	X, y, nbre1, nbre2 : entiers ;
+    Début
+	Affiche ‘’ Entrez deux nombres ‘’ ;
+	Saisir nbre1, nbre2 ;
+	X ‹— nbre1-nbre2 ;
+	Y ‹— nbre2-nbre1 ;
+	Si nbre1 > nbre2 Alors
+		Afficher ‘’ La valeur absolue est : ‘’, x ;
+	Sinon
+		Afficher ‘’ La valeur absolue est : ‘’, y ;
+	Finsi
+   Fin.
+EXERCICE 5 
+  Algorithme feu_tricolor ;
+  Var
+	Couleur : chaîne de caractères ;
+  Début
+	Afficher ‘’ Choisissez une couleur entre Rouge, Orange, Verte.’’ ;
+	Saisir couleur ;
+	Si couleur = ‘’ Rouge ‘’ Alors
+		Afficher ‘’ S’arrêter ‘’ ;
+	Sinon si couleur = ‘’ Orange ‘’ ;
+		Afficher ‘’ Ralentir ‘’ ;
+	Sinon si couleur = ‘’Verte ‘’ ;
+	Afficher  ‘’ Passer ‘’ ;
+Sinon
+	Afficher ‘’ Erreur de choix ‘’ ;
+Finsi
+  Fin.
+EXERCICE 6
+Algorithme resolution_equation ;
+Var
+	a, b : réels ;
+Début
+	Afficher ‘’ entrez deux réels a et b ‘’ ;
+	Saisir a, b ;
+	Si a <> 0 Alors
+		Afficher ‘’ La solution de l’équation est : ‘’, -a/b ;
+	Sinon si b = 0 Alors
+		Afficher ‘’ La solution de l’équation est : |R ‘’
+	Sinon
+		Afficher ‘’ La solution de l’équation est impossible ‘’ ;
+	Finsi
+Fin.
+
+
+EXERCICE 7
+Algorithme plus_grand_nombres ;
+Var
+	A, B, C : entiers ;
+Début 
+	Afficher ‘’ Entrez trois nombres ‘’ ;
+	Saisir A, B, C ;
+	Si A < B ET B < C Alors
+		Afficher ‘’ Le plus grand est ‘’, C ;
+	Sinon si B < C ET C < A Alors
+		Afficher ‘’ Le plus grand est ‘’, A ;
+	Sinon si C < A ET A < B Alors 
+		Afficher ‘’ Le plus grand est ‘’, B ;
+	Sinon
+		Afficher ‘’ Ils sont égaux ‘’ ;
+	Finsi
+Fin.
+
+EXERCICE 8
+Algorithme  feu_tricolor ;
+Var 
+	Couleur : chaînes de carctère ;
+Début
+	Affiche ‘’ Choississez une couleur entre  Rouge, Orange, Vert ;
+	Saisir couleur ;
+	Suivant couleur faire
+		‘’ Rouge ‘’ 
+			Afficher ‘’ s’arrêter ‘’ ;
+		‘’ Orange ‘’ 
+			Afficher ‘’ Ralentir ‘’ ;
+		‘’ Vert ‘’ 
+			Afficher ‘’ Passer ‘’ ;
+	Fin suivant
+Fin.
+
+EXERCICE 9 
+Algorithme  operation ;
+Var 
+	A, B, x : réels ;
+Début
+	Afficher ‘’ Veillez entrez deux nombres ‘’ ;
+	Saisir A, B ;
+	Afficher ‘’ Veillez choisir une opération ‘’ ;
+	Afficher  1 ‘’ – Somme ‘’ ;
+	Afficher 2 ‘’ – Produit ‘’ ;
+	Afficher ‘’ – Moyenne ‘’ ;
+	Saisir operation ;
+	X <— A + B ;
+	Suivant operation faire
+		1
+			Afficher ‘’ La somme est : ‘’, x ;
+		2
+			Afficher ‘’ Le produit est : ‘’, A*B ;
+		3
+			Afficher ‘’ La moyenne est : ‘’, x/2 ;
+	Fin suivant
+Fin.
+
+EXERCICE 10 
+Algorithme  dix_premiers_nombres ;
+Var
+	Som, I, n : entier ;
+Début
+	Afficher ‘’ Entrez un nombre ‘’ ;
+	Saisir n ;
+	Som <— S+I
+	I <— 1
+	Tant_que I <= 10 faire
+		S <— S+I
+		I <— I+1
+	Fin tant_que
+	Afficher ‘’ La somme des 10 premiers entiers est : ‘’, S ;
+Fin.
+
+
+EXERCICE 11 
+Algorithme   message_ecran ;
+Var
+	message : chaîne de caractère ;
+	i : entier ;   
+Début 
+	Afficher ‘’Entrez un nom’’ ;
+	Saisir nom ;
+	Nom <— ‘’ ‘’ ;
+	Tant que nom <> ‘’ZZZZ’’ faire
+		Afficher ‘’ Veillez entrez un nom ‘’ ;
+			i <— i+1
+	fin tan que
+Fin.
+EXERCICE 12
+Algorithme  reponse_question ;
+Var
+	rep : chaîne de caractère ;
+Début 
+	Afficher ‘’ Aimez-vous l’informatique ? O/N ? ‘’ ;
+	Saisir rep ;
+	rep <— ‘’ ‘’ 
+	Tant que rep <> ‘’ O ‘’ ou rep <> ‘’ N ‘’ faire
+		Afficher ‘’ Aimez-vous l’informatique ? O/N ? ‘’ ;
+		Saisir rep ;
+	Fin tant que
+Fin.
+
+
+EXERCICE 13
+Algorithme  reponse_question ;
+Var
+	rep : chaîne de caractère ;
+Début 
+	Répéter
+		Afficher ‘’ Aimez-vous l’informatique ? O/N ? ‘’ ;
+		Saisir rep ;
+	Jusqu’à rep = ‘’ O ‘’ ou rep ‘’ N’’
+Fin.
+EXERCICE 14
+Algorithme somme_des_nombres ;
+Var
+	nbr, s : entiers ;
+Début
+	S <— 0
+	Répéter
+		Afficher ‘’ Entrez un nombre entier ‘’ ;
+		Saisir nbr ;
+		Si nbr >= 0 et nbr <= 99 Alors
+			S <— S + nbr
+		Finsi 
+	Jusqu’à S >= 100 ;
+Fin.
+
+EXERCICE 15
+Algorithme calcul_premiers_norbres ; 
+Var
+	S, i : entiers ;
+Début
+	i <— 1
+	S <— 0
+	Tant que i <= 10 faire
+		S <— S + i
+		i <— i + 1
+	Fin tant que
+	Afficher ‘’ La somme des 10 premiers nombres est : ‘’, S, ‘’. ‘’ ;
+Fin.
+EXERCICE 16
+Algorithme table_8 ;
+Var 
+	j : entier ;
+Début
+	Pour j —> 0 à 12 pas 1 faire
+		Afficher ‘’ 8* ‘’, j, ‘’ = ‘’, 8*j ;
+		Afficher ‘’ \ ‘’ ;
+	Fin pour
+Fin.
+
+EXERCICE 17
+Algorithme 10_tables_10 ;
+Var
+	j, k : entiers ;
+Début
+	Répéter
+		j <—1
+		Repeter
+			k <— 0
+			Afficher j, ‘’ * ‘’, k, ‘’ = ‘’, j*k ;
+			k <— k + 1
+		Jusqu’à j >= 12 ;
+		i <— i + 1
+	Jusqu’à i >=10
+Fin.
+EXERCICE 18 
+Algorithme  factorielle ;
+Var
+	n, i : entiers ;
+	F : réel ;
+Début
+	Afficher ‘’ Entrez un nombre ‘’ ;
+	Saisir n ;
+	Si n > 0 Alors
+		F <— 1
+		Pour i —> 1 à n pas 1 faire
+			F <— F * i
+		Fin pour
+		Afficher ‘’ n ! = ‘’, F ;
+	Sinon si n = 0 Alors
+		Afficher ‘’ n ! = ‘’, 1 ;
+	Sinon
+		Afficher ‘’ Veillez entrez un nombre ‘’ ;
+	Fin si
+Fin.
+EXERCICE 19
+Algorithme PGCD ;
+Var 
+	A, B : entiers ;
+Début
+	Répéter
+		Afficher ‘’ Entrez deux entiers A et B ‘’ ;
+		Saisir A, B ;
+	Jusqu’à A > 0 et B >0
+	Tant que A <> B faire
+		Si A > B Alors
+			A <— A – B
+			Afficher ‘’ PGCD = ‘’, A ;
+		Sinon 
+			B <— B – A
+			Afficher ‘’ PGCD = ‘’, B ;
+		Fin si
+	Fin tant que
+Fin.
+
